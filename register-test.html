@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadside Mart - Register</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="register-test.css">
+</head>
+<body>
+
+  <form id="registerForm" method="POST" action="/register">
+    <h2>Create an Account</h2>
+    
+    <!-- Section for Validation Message -->
+    <div id="validationMessage" class="validation-message"></div>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="confirm_password">Confirm Password</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    
+    <div class="remember-me">
+      <input type="checkbox" id="remember_me" name="remember_me">
+      <label for="remember_me">Remember me</label>
+    </div>
+    
+    <button type="button" onclick="registerUser()">Register</button>
+  </form>
+
+  <script src="register-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadside Mart- Biscuits and Snacks</title>
+  <script src="https://kit.fontawesome.com/7d8e15131d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="biscuitssnacks-test.css">
+</head>
+<body>
+  <!-- Notification Section -->
+  <div class="notification-bar">
+    <div class="notification-text" id="notificationText"></div>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="navbar">
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <span>&#9776;</span>
+    </div>
+    <p><b>Roadside Mart</b></p>
+    <div class="icons">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><a>
+      <a href="login.html"><i <i class="fa-thin fa-right-to-bracket"></i></a>
+    </div>
+  </div>
+
+  <!-- Offside Menu -->
+  <div class="offside-menu" id="offsideMenu">
+    <span class="close-btn" id="closeBtn">✕</span>
+    <ul>
+      <li>Home</li>
+      <li>Categories</li>
+      <li>User History</li>
+      <li>Change Address</li>
+      <li>Theme</li>
+      <li>Settings</li>
+    </ul>
+  </div>
+
+  
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Important: Read Our Order Guidance Before Placing An Order</p>
+    <span id="announcementArrow">&#8594;</span>
+  </div>
+
+  <div class="center-container">
+    <div class="chat-signup-button">
+      <div class="chat-info">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat to Us on <br>(+265) 88 227 3614</span>
+        <a href="" class="signup-btn">Sign Up Now ></a>
+      </div>
+     </div>
+   </div>
+
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search for products...!">
+    <button class="search-btn">Search</button>
+  </div>
+
+  <div class="sort-section">
+    <button class="sort-button">SORT BY:</button>
+    <button class="sort-button" onclick="sortProducts('alphabetical')">by Name</button>
+    <button class="sort-button" onclick="sortProducts('price')">by Price</button>
+  </div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <h2>Special Promotion!</h2>
+    <p>Get 20% off on all biscuits and snacks. Limited time only!</p>
+    <button class="popup-button">Shop Now</button>
+  </div>
+</div>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="Images/crunchy_choc_1024x1024_a7e98b06-5202-471f-9a8b-1f7976b44f35.jpg" alt="Romany Creams All Variants (400g)" class="product-img">
+      <h3 class="product-title">Romany Creams All Variants (400g)</h3>
+      <p class="product-price">MWK6,999</p>
+      <button onclick="addToCart('Romany Creams All Variants (400g)', 6,999)" class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  
+    <div class="product-card">
+      <img src="Images/Wings_8.jpg" alt="Classic Creams All Variants (100g)" class="product-img">
+      <h3 class="product-title">Classic Creams All Variants (100g)</h3>
+      <p class="product-price">MWK369.00</p>
+      <button onclick="addToCart('Classic Creams All Variants (100g)', 369.00)" class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="Images/images (4).jpeg" alt="Custard Creams All Variants (150g)" class="product-img">
+        <h3 class="product-title">Custard Creams All Variants (150g)</h3>
+        <p class="product-price">MWK1,199.00</p>
+        <button onclick="addToCart('Custard Creams All Variants (150g)', 1,199.00)" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    
+      <div class="product-card">
+        <img src="Images/images (3).jpeg" alt="Kruchy Naks All Variants (150g)" class="product-img">
+        <h3 class="product-title">Kruchy Naks All Variants (150g)</h3>
+        <p class="product-price">MWK499.00</p>
+        <button onclick="addToCart('Kruchy Naks All Variants (150g)', 499.00)" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    
+    <!-- Repeat product cards -->
+  </section>
+  
+  <div id="newsletter">
+    <h2>Stay Updated with Our Newsletter</h2>
+    <p>Subscribe to our newsletter to get the latest offers, discounts, and updates directly to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <section class="about-us-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Roadside Mart! We are your local grocery store offering a wide variety of fresh produce, daily essentials, and special promotions. Whether you're looking for the freshest dairy, the best snacks, or your favorite beverages, we’ve got you covered. Shop with us and enjoy unbeatable prices with a friendly customer experience.</p>
+      <a href="meet-the-cart-test.html" class="section-button">Learn More</a>
+    </div>
+  </section>
+
+  <section class="cant-find-section">
+    <div class="container">
+      <h2>Can't find what you are looking for?</h2>
+      <p>If you can't find the product you're searching for, feel free to reach out to us. We're here to help you find exactly what you need.</p>
+      <a href="contact-us-test.html" class="section-button">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Refund Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Order Tracking</a>
+      </div>
+      
+      <div class="social-media">
+        <a href="https://twitter.com/yourusername" target="_blank" class="social-link"><i class="fab fa-twitter">Twitter</i></a>
+        <a href="https://facebook.com/yourusername" target="_blank" class="social-link"><i class="fab fa-facebook">Facebook</i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+        <a href="https://instagram.com/yourusername" target="_blank" class="social-link"><i class="fab fa-instagram"></i>Instagram</a>
+      </div>
+    </div>
+
+    <hr class="footer-line">
+    <p class="build-by">Built by Alibu Ajisa.</p>
+  </footer>
+
+  <script src="biscuitssnacks-test.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Notification Bar */
+.notification-bar {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+/* Hamburger Menu */
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-top: 1px solid #555;
+}
+.hamburger-menu span {
+  font-size: 30px;
+  cursor: pointer;
+}
+.offside-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  z-index: 10; /* Ensure menu appears on top */
+}
+.offside-menu ul {
+  list-style-type: none;
+}
+.offside-menu li {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.close-btn {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+.announcement-bar {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+}
+.announcement-bar p {
+  margin: 0;
+  font-weight: bold;
+}
+#announcementArrow {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.announcement-bar:hover {
+  background-color: #e0e0e0;
+}
+  .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.remove-btn {
+  padding: 5px 10px;
+  background-color:  #ff6f61;/* Red color for remove button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+.checkout-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cant-find-section {
+  background-color: #f7f7f7f9;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+section p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.section-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.section-button:hover {
+  background-color: #0056b3;
+}
+@media (max-width:768px){
+  section h2 {
+    font-size: 20px;
+  }
+  section p {
+    font-size: 14px;
+  }
+  .section-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007BFF;
+}
+
+/* Horizontal Line */
+.footer-line {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #555;
+}
+
+/* Build Acknowledgment */
+.build-by {
+  font-size: 14px;
+  color: #bbb;
+}
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .featured-categories, .shop-categories {
+      flex-direction: column;
+    }
+  }

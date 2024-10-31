@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadside Mart- stationery</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stationery-test.css">
+</head>
+<body>
+  <!-- Notification Section -->
+  <div class="notification-bar">
+    <div class="notification-text" id="notificationText"></div>
+  </div>
+
+   <!-- Hamburger Menu -->
+   <div class="navbar">
+    <div class="hamburger-menu" id="hamburgerMenu">
+      <span>&#9776;</span>
+    </div>
+    <p><b>Roadside Mart</b></p>
+    <div class="icons">
+    <a href="cart-test.html"><i class="fas fa-shopping-cart cart-icon">Cart</i></a>
+    <a href="login-test.html"><i class="fas fa-user login-icon">Login</i></a>
+    </div>
+  </div>
+
+  <!-- Offside Menu -->
+<div class="offside-menu" id="offsideMenu">
+  <span class="close-btn" id="closeBtn">✕</span>
+  <ul>
+    <li><a href="home-test.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="product-cat.html"><i class="fas fa-th-large"></i> Categories</a></li>
+    <li><a href="history.html"><i class="fas fa-history"></i> User History</a></li>
+    <li><a href="address.html"><i class="fas fa-map-marker-alt"></i> Change Address</a></li>
+    <li><a href="theme.html"><i class="fas fa-paint-brush"></i> Theme</a></li>
+    <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+  </ul>
+</div>
+
+  
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p>Important: Read Our Order Guidance Before Placing An Order</p>
+    <span id="announcementArrow">&#8594;</span>
+  </div>
+
+  <div class="center-container">
+    <div class="chat-signup-button">
+      <div class="chat-info">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat to Us on <br>(+265) 88 227 3614</span>
+        <a href="" class="signup-btn">Sign Up Now ></a>
+      </div>
+     </div>
+   </div>
+   
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search for products...!">
+    <button class="search-btn">Search</button>
+  </div>
+
+  <div class="sort-section">
+    <button class="sort-button">SORT BY:</button>
+    <button class="sort-button" onclick="sortProducts('alphabetical')">by Name</button>
+    <button class="sort-button" onclick="sortProducts('price')">by Price</button>
+  </div>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="Images/NESTLE009.png" alt="Nestle Cremora (750g) " class="product-img">
+      <h3 class="product-title">Nestle Cremora (750g) </h3>
+      <p class="product-price">MWK9,345.00</p>
+      <button onclick="addToCart('Nestle Cremora (750g)', 9,345.00)" class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  
+    <div class="product-card">
+      <img src="Images/Wings-2024-05-16T152014.054.jpg" alt="Sobo Squash (2ltr)" class="product-img">
+      <h3 class="product-title">Sobo Squash (2ltr) </h3>
+      <p class="product-price">MWK5,495.00</p>
+      <button onclick="addToCart('Sobo Squash (2ltr)', 5,495.00)" class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="Images/PROMO_36.jpg" alt="Kukoma Cooking Oil (2ltr)" class="product-img">
+        <h3 class="product-title">Kukoma Cooking Oil (2ltr) </h3>
+        <p class="product-price">MWK9,875.00</p>
+        <button onclick="addToCart('Kukoma Cooking Oil (2ltr)', 9,875.00)" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    
+      <div class="product-card">
+        <img src="Images/Kazinga-5Ltr-768x768.png" alt="Kazinga Cooking Oil (5ltr)" class="product-img">
+        <h3 class="product-title">Kazinga Cooking Oil (5ltr) </h3>
+        <p class="product-price">MWK24,687.00</p>
+        <button onclick="addToCart('Kazinga Cooking Oil (5ltr)', 24,687.00)" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    
+    <!-- Repeat product cards -->
+  </section>
+  
+  <div id="newsletter">
+    <h2>Stay Updated with Our Newsletter</h2>
+    <p>Subscribe to our newsletter to get the latest offers, discounts, and updates directly to your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <section class="about-us-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Roadside Mart! We are your local grocery store offering a wide variety of fresh produce, daily essentials, and special promotions. Whether you're looking for the freshest dairy, the best snacks, or your favorite beverages, we’ve got you covered. Shop with us and enjoy unbeatable prices with a friendly customer experience.</p>
+      <a href="meet-the-cart-test.html" class="section-button">Learn More</a>
+    </div>
+  </section>
+
+  <section class="cant-find-section">
+    <div class="container">
+      <h2>Can't find what you are looking for?</h2>
+      <p>If you can't find the product you're searching for, feel free to reach out to us. We're here to help you find exactly what you need.</p>
+      <a href="contact-us-test.html" class="section-button">Contact Us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Refund Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Order Tracking</a>
+      </div>
+      <div class="social-media">
+        <a href="https://twitter.com/yourusername" target="_blank" class="social-link"><i class="fab fa-twitter">Twitter</i></a>
+        <a href="https://facebook.com/yourusername" target="_blank" class="social-link"><i class="fab fa-facebook">Facebook</i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+        <a href="https://instagram.com/yourusername" target="_blank" class="social-link"><i class="fab fa-instagram"></i>Instagram</a>
+      </div>
+    </div>
+    <hr class="footer-line">
+    <p class="build-by">Built by Alibu Ajisa.</p>
+  </footer>
+
+  <script src="stationery-test.js"></script>
+</body>
+</html>
